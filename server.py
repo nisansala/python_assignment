@@ -12,13 +12,13 @@ cli, addr = soc.accept()
 
 
 
-def SE():
+def RCD():
 	while True:
 		
 		cdata=cli.recv(1024)
 		print("client : "+cdata)
 
-th = Thread(target=SE).start()
+th = Thread(target=RCD).start()
 
 while True:
 
