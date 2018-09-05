@@ -9,13 +9,13 @@ soc.connect((host, port))
 
 
 
-def CL():
+def RSD():
 	while True:
 		
 		sdata=soc.recv(1024)
 		print("server : "+sdata)
 
-th2 = Thread(target=CL).start()
+th2 = Thread(target=RSD).start()
 
 while True:
 
